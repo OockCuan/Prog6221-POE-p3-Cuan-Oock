@@ -1,0 +1,17 @@
+C:\Users\lab_services_student\Desktop\Github\prog6221 final poe\PROG6221-POE-Cuan-Oock\Prog6221 POE\bin\Debug\Prog6221 POE.exe.config
+C:\Users\lab_services_student\Desktop\Github\prog6221 final poe\PROG6221-POE-Cuan-Oock\Prog6221 POE\bin\Debug\Prog6221 POE.exe
+C:\Users\lab_services_student\Desktop\Github\prog6221 final poe\PROG6221-POE-Cuan-Oock\Prog6221 POE\bin\Debug\Prog6221 POE.pdb
+C:\Users\lab_services_student\Desktop\Github\prog6221 final poe\PROG6221-POE-Cuan-Oock\Prog6221 POE\obj\Debug\Prog6221 POE.csproj.AssemblyReference.cache
+C:\Users\lab_services_student\Desktop\Github\prog6221 final poe\PROG6221-POE-Cuan-Oock\Prog6221 POE\obj\Debug\MainWindow.g.cs
+C:\Users\lab_services_student\Desktop\Github\prog6221 final poe\PROG6221-POE-Cuan-Oock\Prog6221 POE\obj\Debug\Window1.g.cs
+C:\Users\lab_services_student\Desktop\Github\prog6221 final poe\PROG6221-POE-Cuan-Oock\Prog6221 POE\obj\Debug\App.g.cs
+C:\Users\lab_services_student\Desktop\Github\prog6221 final poe\PROG6221-POE-Cuan-Oock\Prog6221 POE\obj\Debug\Prog6221 POE_MarkupCompile.cache
+C:\Users\lab_services_student\Desktop\Github\prog6221 final poe\PROG6221-POE-Cuan-Oock\Prog6221 POE\obj\Debug\Prog6221 POE_MarkupCompile.lref
+C:\Users\lab_services_student\Desktop\Github\prog6221 final poe\PROG6221-POE-Cuan-Oock\Prog6221 POE\obj\Debug\MainWindow.baml
+C:\Users\lab_services_student\Desktop\Github\prog6221 final poe\PROG6221-POE-Cuan-Oock\Prog6221 POE\obj\Debug\Window1.baml
+C:\Users\lab_services_student\Desktop\Github\prog6221 final poe\PROG6221-POE-Cuan-Oock\Prog6221 POE\obj\Debug\Prog6221 POE.g.resources
+C:\Users\lab_services_student\Desktop\Github\prog6221 final poe\PROG6221-POE-Cuan-Oock\Prog6221 POE\obj\Debug\Prog6221_POE.Properties.Resources.resources
+C:\Users\lab_services_student\Desktop\Github\prog6221 final poe\PROG6221-POE-Cuan-Oock\Prog6221 POE\obj\Debug\Prog6221 POE.csproj.GenerateResource.cache
+C:\Users\lab_services_student\Desktop\Github\prog6221 final poe\PROG6221-POE-Cuan-Oock\Prog6221 POE\obj\Debug\Prog6221 POE.csproj.CoreCompileInputs.cache
+C:\Users\lab_services_student\Desktop\Github\prog6221 final poe\PROG6221-POE-Cuan-Oock\Prog6221 POE\obj\Debug\Prog6221 POE.exe
+C:\Users\lab_services_student\Desktop\Github\prog6221 final poe\PROG6221-POE-Cuan-Oock\Prog6221 POE\obj\Debug\Prog6221 POE.pdb
