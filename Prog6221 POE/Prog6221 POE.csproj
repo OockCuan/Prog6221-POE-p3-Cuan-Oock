@@ -55,9 +55,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ActivityLog.cs" />
     <Compile Include="ExtendedResponse.cs" />
     <Compile Include="KeywordsFinder.cs" />
     <Compile Include="Response.cs" />
+    <Compile Include="Tasks.cs" />
     <Compile Include="Window1.xaml.cs">
       <DependentUpon>Window1.xaml</DependentUpon>
     </Compile>

@@ -13,10 +13,10 @@ namespace Prog6221_POE
         {
             string key = "A";
 
-            if (text.Contains("phish") | text.Contains("Phish"))
+            if (text.Contains("phish") || text.Contains("Phish"))
             {
                 //if asked about phishing vs vishing vs pharming
-                if (text.Contains("vish") | text.Contains("Vish") | text.Contains("pharm") | text.Contains("Pharm"))
+                if (text.Contains("vish") || text.Contains("Vish") | text.Contains("pharm") | text.Contains("Pharm"))
                 {
                     key = "G";
                 }
@@ -26,15 +26,15 @@ namespace Prog6221_POE
                 }
             }
             //Checking for key for all phrases using the word safe
-            else if (text.Contains("safe") | text.Contains("Safety"))
+            else if (text.Contains("safe") || text.Contains("Safety"))
             {
                 //safe browsing
-                if (text.Contains("brows") | text.Contains("Brows"))
+                if (text.Contains("brows") || text.Contains("Brows"))
                 {
                     key = "C";
                 }
                 //internet safety
-                else if (text.Contains("internet") | text.Contains("Internet"))
+                else if (text.Contains("internet") || text.Contains("Internet"))
                 {
                     key = "D";
                 }
@@ -46,19 +46,19 @@ namespace Prog6221_POE
 
             }
             //default browsing
-            else if (text.Contains("brows") | text.Contains("Brows"))
+            else if (text.Contains("brows") || text.Contains("Brows"))
             {
                 key = "F";
             }
             //passwords
-            else if (text.Contains("Password") | text.Contains("password"))
+            else if (text.Contains("Password") || text.Contains("password"))
             {
                 key = "H";
             }
             //vishing
-            else if (text.Contains("vish") | text.Contains("Vishing"))
+            else if (text.Contains("vish") || text.Contains("Vishing"))
             {
-                if (text.Contains("pharm") | text.Contains("Pharming"))
+                if (text.Contains("pharm") || text.Contains("Pharming"))
                 { key = "G"; }
                 else
                 {
@@ -66,12 +66,12 @@ namespace Prog6221_POE
                 }
             }
             //pharming
-            else if (text.Contains("pharm") | text.Contains("Pharming"))
+            else if (text.Contains("pharm") || text.Contains("Pharming"))
             {
                 key = "J";
             }
             //generic questions
-            else if (text.Contains("how are you") | text.Contains("How are you"))
+            else if (text.Contains("how are you") || text.Contains("How are you"))
             {
                 key = "K";
             }
@@ -79,19 +79,28 @@ namespace Prog6221_POE
             {
                 key = "L";
             }
-            else if (text.Contains("ask you about") | text.Contains("ask about"))
+            else if (text.Contains("ask you about") || text.Contains("ask about"))
             {
                 key = "M";
             }
-            else if (text.Contains("Privacy") | text.Contains("privacy"))
+            else if (text.Contains("Privacy") || text.Contains("privacy"))
             {
                 key = "N";
             }
-            else if (text.Contains("Scam") | text.Contains("scam"))
+            else if (text.Contains("Scam") || text.Contains("scam"))
             {
                 key = "O";
             }
 
+            //new additions for tasks, quiz and log
+            else if (text.Contains("tasks") || text.Contains("Tasks"))
+            {
+                key = "Y";
+            }
+            else if (text.Contains("add") || text.Contains("Add") || text.Contains("emind"))
+            {
+                key = "Z";
+            }
             return key;
         }
 
@@ -99,11 +108,11 @@ namespace Prog6221_POE
         public string questionWords(string text)
         {
             string key = "what";
-            if (text.Contains("tip") | text.Contains("Tip"))
+            if (text.Contains("tip") || text.Contains("Tip"))
             {
                 key = "tip";
             }
-            else if (text.Contains("what") | text.Contains("What"))
+            else if (text.Contains("what") || text.Contains("What"))
             {
                 key = "what";
             }

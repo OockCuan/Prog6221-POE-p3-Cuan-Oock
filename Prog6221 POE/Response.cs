@@ -46,7 +46,7 @@ namespace Prog6221_POE
         }
 
         //Method that holds all the preprogrammed responses for the chat bot
-        public string respond(string keyword, string questionWord, string name)
+        public string respond(string keyword, string questionWord)
         {
             //Item 0:Question word "what"
             //Item 1:Alternative response to "what"
@@ -212,7 +212,8 @@ namespace Prog6221_POE
             }
             else if (keyword.Equals("M"))
             {
-                response = "I've been trained on types of cyber scams as well as internet and password safety, so you can ask about those.";
+                response = "I've been trained on types of cyber scams as well as internet and password safety, so you can ask about those. You can also" +
+                    "use me to add tasks and take a simple cyber security quiz";
 
             }
             return response;

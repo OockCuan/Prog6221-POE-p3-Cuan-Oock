@@ -7,12 +7,15 @@
         mc:Ignorable="d"
         Title="Window1" Height="450" Width="800">
     <Grid>
-        <TextBox HorizontalAlignment="Center" Height="98" Margin="0,88,0,0" TextWrapping="Wrap" Text="Type here" VerticalAlignment="Top" Width="500" x:Name="userInput"/>
-        <TextBlock HorizontalAlignment="Center" Height="92" Margin="0,239,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="500" x:Name="responseBox"/>
-        <Label Content="Your input:" HorizontalAlignment="Left" Height="31" Margin="10,88,0,0" VerticalAlignment="Top" Width="119" FontWeight="Bold"/>
-        <Label Content="Response:" HorizontalAlignment="Left" Height="31" Margin="10,267,0,0" VerticalAlignment="Top" Width="119" FontWeight="Bold"/>
-        <Button Content="Submit" HorizontalAlignment="Left" Margin="189,201,0,0" VerticalAlignment="Top" Width="83" Height="22" x:Name="submitBtn" Click="submitBtn_Click"/>
-        <Button Content="Close" HorizontalAlignment="Left" Margin="620,364,0,0" VerticalAlignment="Top" Width="83" Height="22" x:Name="closeBtn" Click="closeBtn_Click"/>
+
+        <TextBlock HorizontalAlignment="Left" Height="189" Margin="152,217,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="500" x:Name="responseBox"  />
+
+        <TextBox HorizontalAlignment="Center" Height="98" Margin="0,59,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="500" x:Name="userInput"/>
+        <Label Content="Your input:" HorizontalAlignment="Left" Height="31" Margin="10,59,0,0" VerticalAlignment="Top" Width="119" FontWeight="Bold"/>
+        <Label Content="Response:" HorizontalAlignment="Left" Height="31" Margin="12,217,0,0" VerticalAlignment="Top" Width="120" FontWeight="Bold"/>
+        <Button Content="Submit" HorizontalAlignment="Left" Margin="192,179,0,0" VerticalAlignment="Top" Width="82" Height="22" x:Name="submitBtn" Click="submitBtn_Click"/>
+        <Button Content="Close" HorizontalAlignment="Left" Margin="676,384,0,0" VerticalAlignment="Top" Width="83" Height="22" x:Name="closeBtn" Click="closeBtn_Click"/>
+        
 
     </Grid>
 </Window>
