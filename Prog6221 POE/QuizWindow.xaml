@@ -1,0 +1,61 @@
+﻿<Window x:Class="Prog6221_POE.QuizWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Prog6221_POE"
+        mc:Ignorable="d"
+        Title="QuizWindow" Height="700" Width="1200">
+    <Grid>
+        <RadioButton Content="True" HorizontalAlignment="Left" Margin="162,148,0,0" VerticalAlignment="Top" GroupName="q1" x:Name="t1"/>
+        <RadioButton Content="False" HorizontalAlignment="Left" Margin="162,168,0,0" VerticalAlignment="Top" GroupName="q1" x:Name="f1"/>
+        <RadioButton Content="True" HorizontalAlignment="Left" Margin="162,248,0,0" VerticalAlignment="Top" GroupName="q2" x:Name="t2"/>
+        <RadioButton Content="False" HorizontalAlignment="Left" Margin="162,268,0,0" VerticalAlignment="Top" GroupName="q2" x:Name="f2"/>
+        <RadioButton Content="True" HorizontalAlignment="Left" Margin="162,352,0,0" VerticalAlignment="Top" GroupName="q3" x:Name="t3"/>
+        <RadioButton Content="False" HorizontalAlignment="Left" Margin="162,372,0,0" VerticalAlignment="Top" GroupName="q3" x:Name="f3"/>
+        <RadioButton Content="True" HorizontalAlignment="Left" Margin="162,449,0,0" VerticalAlignment="Top" GroupName="q4" x:Name="t4"/>
+        <RadioButton Content="False" HorizontalAlignment="Left" Margin="162,469,0,0" VerticalAlignment="Top" GroupName="q4" x:Name="f4"/>
+        <RadioButton Content="True" HorizontalAlignment="Left" Margin="162,562,0,0" VerticalAlignment="Top" GroupName="q5" x:Name="t5"/>
+        <RadioButton Content="False" HorizontalAlignment="Left" Margin="162,582,0,0" VerticalAlignment="Top" GroupName="q5" x:Name="f5"/>
+        <Label Content="Vishing is an email scam" HorizontalAlignment="Left" Margin="126,117,0,0" VerticalAlignment="Top" Width="193"/>
+        <Label Content="Phishing is a type of sport" HorizontalAlignment="Left" Margin="126,222,0,0" VerticalAlignment="Top" Width="193"/>
+        <Label Content="Passwords should contain personal data" HorizontalAlignment="Left" Margin="126,321,0,0" VerticalAlignment="Top" Width="229"/>
+        <Label Content="Passwords should have special characters" HorizontalAlignment="Left" Margin="126,423,0,0" VerticalAlignment="Top" Width="229"/>
+        <Label Content="Scams are always easy to spot" HorizontalAlignment="Left" Margin="126,531,0,0" VerticalAlignment="Top" Width="193"/>
+        <Label Content="Cyber security quiz" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Width="432" Height="60" HorizontalContentAlignment="Center" FontSize="30" FontWeight="Bold"/>
+        <Label Content="What should you do if you get a suspicious email" HorizontalAlignment="Center" Margin="0,112,0,0" VerticalAlignment="Top" Width="280" Height="31"/>
+        <RadioButton Content="Click the link in the email" HorizontalAlignment="Left" Margin="492,148,0,0" VerticalAlignment="Top" GroupName="q6" x:Name="a6"/>
+        <RadioButton Content="Ignore it" HorizontalAlignment="Left" Margin="492,168,0,0" VerticalAlignment="Top" GroupName="q6" x:Name="b6"/>
+        <RadioButton Content="Reply to it" HorizontalAlignment="Left" Margin="492,188,0,0" VerticalAlignment="Top" GroupName="q6" x:Name="c6"/>
+        <Label Content="What should you do if you are asked for a password" HorizontalAlignment="Left" Margin="460,214,0,0" VerticalAlignment="Top" Width="308" Height="30"/>
+        <RadioButton Content="Tell the person your password" HorizontalAlignment="Left" Margin="492,249,0,0" VerticalAlignment="Top" GroupName="q7" x:Name="a7"/>
+        <RadioButton Content="Write your password down and give it to the person" HorizontalAlignment="Left" Margin="492,270,0,0" VerticalAlignment="Top" GroupName="q7" x:Name="b7"/>
+        <RadioButton Content="Do not give your password" HorizontalAlignment="Left" Margin="492,290,0,0" VerticalAlignment="Top" GroupName="q7" x:Name="c7"/>
+        <Label Content="Which is an example of a good password" HorizontalAlignment="Left" Margin="460,330,0,0" VerticalAlignment="Top" Width="308" Height="32"/>
+        <RadioButton Content="uM89F#Q2iy)" HorizontalAlignment="Left" Margin="492,366,0,0" VerticalAlignment="Top" GroupName="q8" x:Name="a8"/>
+        <RadioButton Content="Password123" HorizontalAlignment="Left" Margin="492,386,0,0" VerticalAlignment="Top" GroupName="q8" x:Name="b8"/>
+        <RadioButton Content="Your birthday" HorizontalAlignment="Left" Margin="492,406,0,0" VerticalAlignment="Top" GroupName="q8" x:Name="c8"/>
+        <Label Content="How do you know a websites info is encrypted" HorizontalAlignment="Left" Margin="460,428,0,0" VerticalAlignment="Top" Width="308" Height="32"/>
+        <RadioButton Content="There's no way to tell" HorizontalAlignment="Left" Margin="492,464,0,0" VerticalAlignment="Top" GroupName="q9" x:Name="a9"/>
+        <RadioButton Content="The URL starts with http" HorizontalAlignment="Left" Margin="492,484,0,0" VerticalAlignment="Top" GroupName="q9" x:Name="b9"/>
+        <RadioButton Content="The URL starts with https" HorizontalAlignment="Left" Margin="492,505,0,0" VerticalAlignment="Top" GroupName="q9" x:Name="c9"/>
+        <Label Content="How are pharming attacks done" HorizontalAlignment="Left" Margin="460,524,0,0" VerticalAlignment="Top" Width="308" Height="32"/>
+        <RadioButton Content="Through fake websites and redirecting" HorizontalAlignment="Left" Margin="492,560,0,0" VerticalAlignment="Top" GroupName="q10" x:Name="a10"/>
+        <RadioButton Content="Through email scam" HorizontalAlignment="Left" Margin="492,580,0,0" VerticalAlignment="Top" GroupName="q10" x:Name="b10"/>
+        <RadioButton Content="By making unsecure passwords" HorizontalAlignment="Left" Margin="492,601,0,0" VerticalAlignment="Top" GroupName="q10" x:Name="c10"/>
+        <Button Content="Submit" HorizontalAlignment="Left" Margin="884,570,0,0" VerticalAlignment="Top" Height="33" Width="72" x:Name="qSubmssion" Click="qSubmssion_Click"/>
+        <Button Content="Close" HorizontalAlignment="Left" Margin="980,570,0,0" VerticalAlignment="Top" Height="33" Width="72" x:Name="closeBtnQ" Click="closeBtnQ_Click"/>
+        <TextBlock HorizontalAlignment="Left" Height="258" Margin="861,143,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="257" FontSize="30" x:Name="resultsBox"/>
+        <CheckBox Content="" HorizontalAlignment="Left" Margin="384,122,0,0" VerticalAlignment="Top" IsEnabled="False" x:Name="cb1"/>
+        <CheckBox Content="" HorizontalAlignment="Left" Margin="384,223,0,0" VerticalAlignment="Top" IsEnabled="False" x:Name="cb2"/>
+        <CheckBox Content="" HorizontalAlignment="Left" Margin="384,330,0,0" VerticalAlignment="Top" IsEnabled="False" x:Name="cb3"/>
+        <CheckBox Content="" HorizontalAlignment="Left" Margin="384,428,0,0" VerticalAlignment="Top" IsEnabled="False" x:Name="cb4"/>
+        <CheckBox Content="" HorizontalAlignment="Left" Margin="384,540,0,0" VerticalAlignment="Top" IsEnabled="False" x:Name="cb5"/>
+        <CheckBox Content="" HorizontalAlignment="Left" Margin="796,122,0,0" VerticalAlignment="Top" IsEnabled="False" x:Name="cb6"/>
+        <CheckBox Content="" HorizontalAlignment="Left" Margin="796,223,0,0" VerticalAlignment="Top" IsEnabled="False" x:Name="cb7"/>
+        <CheckBox Content="" HorizontalAlignment="Left" Margin="796,338,0,0" VerticalAlignment="Top" IsEnabled="False" x:Name="cb8"/>
+        <CheckBox Content="" HorizontalAlignment="Left" Margin="796,432,0,0" VerticalAlignment="Top" IsEnabled="False" x:Name="cb9"/>
+        <CheckBox Content="" HorizontalAlignment="Left" Margin="796,528,0,0" VerticalAlignment="Top" IsEnabled="False" x:Name="cb10"/>
+
+    </Grid>
+</Window>

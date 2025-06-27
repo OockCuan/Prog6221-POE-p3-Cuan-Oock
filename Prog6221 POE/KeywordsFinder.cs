@@ -8,6 +8,12 @@ namespace Prog6221_POE
 {
     internal class KeywordsFinder
     {
+        
+        public KeywordsFinder()
+        {
+            
+        }
+
         //Method that sees what keywords are in user questions and returns a response key
         public string keyWords(string text)
         {
@@ -19,10 +25,12 @@ namespace Prog6221_POE
                 if (text.Contains("vish") || text.Contains("Vish") | text.Contains("pharm") | text.Contains("Pharm"))
                 {
                     key = "G";
+                    
                 }
                 else
                 {
                     key = "B";
+                    
                 }
             }
             //Checking for key for all phrases using the word safe
@@ -32,16 +40,19 @@ namespace Prog6221_POE
                 if (text.Contains("brows") || text.Contains("Brows"))
                 {
                     key = "C";
+                    
                 }
                 //internet safety
                 else if (text.Contains("internet") || text.Contains("Internet"))
                 {
                     key = "D";
+                    
                 }
                 //defaults to password safety
                 else
                 {
                     key = "M";
+                    
                 }
 
             }
@@ -49,26 +60,33 @@ namespace Prog6221_POE
             else if (text.Contains("brows") || text.Contains("Brows"))
             {
                 key = "F";
+                
             }
             //passwords
             else if (text.Contains("Password") || text.Contains("password"))
             {
                 key = "H";
+                
             }
             //vishing
             else if (text.Contains("vish") || text.Contains("Vishing"))
             {
                 if (text.Contains("pharm") || text.Contains("Pharming"))
-                { key = "G"; }
+                { key = "G";
+                    
+                }
+
                 else
                 {
                     key = "I";
+                    
                 }
             }
             //pharming
             else if (text.Contains("pharm") || text.Contains("Pharming"))
             {
                 key = "J";
+                
             }
             //generic questions
             else if (text.Contains("how are you") || text.Contains("How are you"))
@@ -86,10 +104,12 @@ namespace Prog6221_POE
             else if (text.Contains("Privacy") || text.Contains("privacy"))
             {
                 key = "N";
+               
             }
             else if (text.Contains("Scam") || text.Contains("scam"))
             {
                 key = "O";
+                
             }
 
             //new additions for tasks, quiz and log
@@ -100,6 +120,14 @@ namespace Prog6221_POE
             else if (text.Contains("add") || text.Contains("Add") || text.Contains("emind"))
             {
                 key = "Z";
+            }
+            else if (text.Contains("quiz") || text.Contains("Quiz")) 
+            {
+                key = "X";
+            }
+            else if (text.Contains("istory") || text.Contains("log") || text.Contains("ctivity"))
+            {
+                key = "W";
             }
             return key;
         }

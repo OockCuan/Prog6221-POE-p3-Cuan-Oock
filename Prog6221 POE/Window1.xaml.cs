@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -25,6 +26,7 @@ namespace Prog6221_POE
         private string response;
         private string rkeywords;
         private string input = "";
+        private int quizHS = 0;
 
         //declaring array and arraylist for recall, activity log and tasks
         private ArrayList topics = new ArrayList();
@@ -32,10 +34,12 @@ namespace Prog6221_POE
         private ArrayList tasks = new ArrayList();
 
         //declaring variables for keyword class and extended responses
-        KeywordsFinder chat = new KeywordsFinder();
-        ExtendedResponse eResponder = new ExtendedResponse();
+        private History history = new History();
+        private ExtendedResponse eResponder = new ExtendedResponse();
         Tasks taskMaker = new Tasks();
-        
+        KeywordsFinder chat = new KeywordsFinder();
+
+
         public Window1(string username)
         {
             InitializeComponent();
@@ -54,6 +58,7 @@ namespace Prog6221_POE
             //declaring response class with username and giving variable names to 
             
             Response responder = new Response(username);
+            
 
             //logic to add task
             if (chat.keyWords(userInput.Text) == "Z")
@@ -68,10 +73,14 @@ namespace Prog6221_POE
                 {
                     //using old input and new input to form one reminder
 
-                    Tasks newTask = taskMaker.createTask(input, userInput.Text);
+                    Tasks newTask = taskMaker.createTask(input, userInput.Text, history);
                     tasks.Add(newTask);
+                    if (newTask.getReminder().Equals("None")) {
+                        response = "Great, task added with no reminder";
+                    } else { 
+                        response = "Great, I'll remind you " + newTask.getReminder(); 
+                    }
                     
-                    response = "Great, I'll remind you " + newTask.getReminder();
                 }
                 catch (ArgumentOutOfRangeException)
                 {
@@ -88,6 +97,17 @@ namespace Prog6221_POE
                 }
                 response = allTasks;
             }
+            //Showing quiz window when asked
+            else if (chat.keyWords(userInput.Text) == "X") {
+                QuizWindow quiz = new QuizWindow(quizHS, history);
+                quiz.Show();
+            }
+            //Activity log logic
+            else if (chat.keyWords(userInput.Text) == "W")
+            {
+                response = history.ToString();
+                moreBtn.Visibility = Visibility.Visible;
+            }
 
 
             //checking is user is still confused to assist them further before next response
@@ -103,7 +123,7 @@ namespace Prog6221_POE
                 //forming the response with sentiment checking and recall features
                 rkeywords = chat.keyWords(userInput.Text);
                 response = responder.sentimentCheck(rkeywords) + "\n" +
-                    responder.respond(rkeywords, chat.questionWords(userInput.Text)) + "\n" +
+                    responder.respond(rkeywords, chat.questionWords(userInput.Text), history) + "\n" +
                     eResponder.recall(topics, rkeywords);
 
                 topics.Add(rkeywords);
@@ -117,6 +137,11 @@ namespace Prog6221_POE
             
         }
 
-
+        private void moreBtn_Click(object sender, RoutedEventArgs e)
+        {
+            moreBtn.Visibility = Visibility.Hidden;
+            history.Show();
+            history.update(history);
+        }
     }
 }

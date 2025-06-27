@@ -15,7 +15,8 @@
         <Label Content="Response:" HorizontalAlignment="Left" Height="31" Margin="12,217,0,0" VerticalAlignment="Top" Width="120" FontWeight="Bold"/>
         <Button Content="Submit" HorizontalAlignment="Left" Margin="192,179,0,0" VerticalAlignment="Top" Width="82" Height="22" x:Name="submitBtn" Click="submitBtn_Click"/>
         <Button Content="Close" HorizontalAlignment="Left" Margin="676,384,0,0" VerticalAlignment="Top" Width="83" Height="22" x:Name="closeBtn" Click="closeBtn_Click"/>
-        
+        <Button Content="Show more" HorizontalAlignment="Left" Margin="676,348,0,0" VerticalAlignment="Top" Width="83" Height="22" x:Name="moreBtn" Click="moreBtn_Click" Visibility="Hidden" />
+
 
     </Grid>
 </Window>

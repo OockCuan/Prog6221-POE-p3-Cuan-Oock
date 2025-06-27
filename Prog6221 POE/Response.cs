@@ -46,7 +46,7 @@ namespace Prog6221_POE
         }
 
         //Method that holds all the preprogrammed responses for the chat bot
-        public string respond(string keyword, string questionWord)
+        public string respond(string keyword, string questionWord, History history)
         {
             //Item 0:Question word "what"
             //Item 1:Alternative response to "what"
@@ -216,6 +216,45 @@ namespace Prog6221_POE
                     "use me to add tasks and take a simple cyber security quiz";
 
             }
+
+            //Logic that adds responses to the activity log
+            if (keyword.Equals("B"))
+            {
+                history.addTask("Spoke about phishing");
+            }
+            else if (keyword.Equals("G"))
+            {
+                history.addTask("Spoke about phishing vs vishing vs pharming");
+            }
+            else if (keyword.Equals("C"))
+            {
+                history.addTask("Spoke about browser safety");
+            }
+            else if (keyword.Equals("D"))
+            {
+                history.addTask("Spoke about internet safety");
+            }
+            else if (keyword.Equals("M"))
+            {
+                history.addTask("Spoke about password safety");
+            }
+            else if (keyword.Equals("F"))
+            {
+                history.addTask("Spoke about browser safety");
+            }
+            else if (keyword.Equals("H"))
+            {
+                history.addTask("Spoke about password safety");
+            }
+            else if (keyword.Equals("I"))
+            {
+                history.addTask("Spoke about vishing");
+            }
+            else if (keyword.Equals("J"))
+            {
+                history.addTask("Spoke about pharming");
+            }
+
             return response;
 
         }

@@ -32,3 +32,7 @@ C:\Users\lab_services_student\Desktop\Github\Fprogpoe\prog6221poe\Prog6221 POE\o
 C:\Users\lab_services_student\Desktop\Github\Fprogpoe\prog6221poe\Prog6221 POE\obj\Debug\Prog6221 POE.csproj.CoreCompileInputs.cache
 C:\Users\lab_services_student\Desktop\Github\Fprogpoe\prog6221poe\Prog6221 POE\obj\Debug\Prog6221 POE.exe
 C:\Users\lab_services_student\Desktop\Github\Fprogpoe\prog6221poe\Prog6221 POE\obj\Debug\Prog6221 POE.pdb
+C:\Users\lab_services_student\Desktop\Github\Fprogpoe\prog6221poe\Prog6221 POE\obj\Debug\QuizWindow.g.cs
+C:\Users\lab_services_student\Desktop\Github\Fprogpoe\prog6221poe\Prog6221 POE\obj\Debug\QuizWindow.baml
+C:\Users\lab_services_student\Desktop\Github\Fprogpoe\prog6221poe\Prog6221 POE\obj\Debug\History.g.cs
+C:\Users\lab_services_student\Desktop\Github\Fprogpoe\prog6221poe\Prog6221 POE\obj\Debug\History.baml
